@@ -13,10 +13,10 @@ from codecs import open
 if __name__ == '__main__':
     setuptools.setup(
         name='translitera',
-        version='0.1.dev0',
+        version='0.1.1.dev0',
 
         description='Phonetic transliteration of text in Kannaḍa script into Latin/English characters',
-        long_description=open('README.reSTful').read(),
+        long_description=open('translitera/README.reSTful').read(),
 
         url='https://github.com/sria91/translitera',
         download_url='https://github.com/sria91/translitera',
@@ -36,10 +36,12 @@ if __name__ == '__main__':
 
         keywords=['translitera'],
 
-        package_data={
-            'kn_to_ln': 'kannaḍa_to_latin.json',
-#            'kn_to_en': 'kannaḍa_to_english.json',
-#            'kn_to_en2': 'kannaḍa_to_english_2.json',
+        package_data={ 'translitera' : [
+            'README.reSTful', 
+            'LICENSE.txt', 
+#            'kannaḍa_to_english.json',
+#            'kannaḍa_to_english_2.json',
+            'kannaḍa_to_latin.json'],
         },
 
         entry_points={
