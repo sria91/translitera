@@ -4,7 +4,7 @@
 
 ^^^ Prerequisites
 
-	1. Python 3 - https://www.python.org/ (tested with Python 3.5.x)
+	1. Python 3 - https://www.python.org/ (tested with Python 3.5 & 3.6)
 
 ^^^ Build and install translitera
 
@@ -19,15 +19,16 @@
 		  `$ cat kannada_file.txt | translitera > transliterated_file.txt`
 
 	  2. To transliterate console input in Kannaḍa script into English/Latin
-      ```
-      $ translitera -t ಕದಂಬ
-      kadamba
-      $ translitera -t ಕನ್ನಡ
-      kannaḍa
-      ```
+          ```
+          $ translitera -t ಕದಂಬ
+          kadamba
+          $ translitera -t ಕನ್ನಡ
+          kannaḍa
+          ```
 
 	  3. To transliterate a filename in Kannaḍa script into English/Latin
 		  `$ translitera -r <filename>`
 
 	  4. To batch transliterate the directory contents in Kannaḍa script into English/Latin
 		  `$ translitera -b <directory_name>`
+

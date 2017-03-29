@@ -3,17 +3,18 @@
 Created on Sat Aug 13 19:24:50 2016
 
 @title: setup.py
-@author: Srikanth Anantharam <srikanth_anantharam@linux.com>
+@author: Srikanth Anantharam <saprao@linux.com>
 @purpose: setup script for the translitera package
 """
 
 import setuptools
-from codecs import open
+
+__author__ = "sria91"
 
 if __name__ == '__main__':
     setuptools.setup(
         name='translitera',
-        version='0.1.1.dev0',
+        version='0.2.0.dev0',
 
         description='Phonetic transliteration of text in Kannaḍa script into Latin/English characters',
         long_description=open('translitera/README.reSTful').read(),
@@ -36,17 +37,18 @@ if __name__ == '__main__':
 
         keywords=['translitera'],
 
-        package_data={ 'translitera' : [
-            'README.reSTful', 
-            'LICENSE.txt', 
-#            'kannaḍa_to_english.json',
-#            'kannaḍa_to_english_2.json',
-            'kannaḍa_to_latin.json'],
+        package_data={
+            'translitera': [
+                'README.reSTful',
+                'LICENSE.txt',
+                'kn2la.json',
+                'kn2en.json'
+            ],
         },
 
         entry_points={
             'console_scripts': [
-            'translitera = translitera:main',
+                'translitera = translitera.translitera:main',
             ],
         },
     )
