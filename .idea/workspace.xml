@@ -1,26 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49fa95cc-c975-4686-8bdb-b423dbf5e1ce" name="Default" comment="major update&#10; + transitera is now object oriented&#10; + using argparse for commandline options parsing&#10; + version bump 0.2.0.dev0">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/translitera.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/translitera/translitera.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/upload.sh" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/setup.cfg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/translitera.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/translitera/__main__.py" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/translitera/kannaḍa_to_english.json" afterPath="$PROJECT_DIR$/translitera/kn2en.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/translitera/kannaḍa_to_english_2.json" afterPath="$PROJECT_DIR$/translitera/kn2en2.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/translitera/kannaḍa_to_latin.json" afterPath="$PROJECT_DIR$/translitera/kn2la.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.txt" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TODO.txt" afterPath="$PROJECT_DIR$/TODO.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/setup.py" afterPath="$PROJECT_DIR$/setup.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translitera/LICENSE.txt" afterPath="$PROJECT_DIR$/translitera/LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translitera/README.reSTful" afterPath="$PROJECT_DIR$/translitera/README.reSTful" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translitera/__init__.py" afterPath="$PROJECT_DIR$/translitera/__init__.py" />
+    <list default="true" id="49fa95cc-c975-4686-8bdb-b423dbf5e1ce" name="Default" comment="major update&#10; + completely rewritten codebase&#10; + transitera is now object oriented&#10; + using argparse for commandline options parsing&#10; + version bump 0.2.0.dev0">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/translitera/kn2la.json" afterPath="$PROJECT_DIR$/translitera/kn2la.json" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,14 +25,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="translitera.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="translitera.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/translitera/translitera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2159">
-              <caret line="127" column="11" lean-forward="true" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+            <state relative-caret-position="364">
+              <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
               <folding>
                 <element signature="e#282#291#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kn2la.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/translitera/kn2la.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="452">
+              <caret line="603" column="0" lean-forward="true" selection-start-line="603" selection-start-column="0" selection-end-line="603" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -91,6 +84,7 @@
         <option value="$PROJECT_DIR$/translitera/__init__.py" />
         <option value="$PROJECT_DIR$/setup.py" />
         <option value="$PROJECT_DIR$/translitera/translitera.py" />
+        <option value="$PROJECT_DIR$/translitera/kn2la.json" />
       </list>
     </option>
   </component>
@@ -270,17 +264,26 @@
       <option name="presentableId" value="Default" />
       <updated>1490528664069</updated>
     </task>
+    <task id="LOCAL-00001" summary="major update&#10; + completely rewritten codebase&#10; + transitera is now object oriented&#10; + using argparse for commandline options parsing&#10; + version bump 0.2.0.dev0">
+      <created>1490795531561</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1490795531561</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1366" height="741" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21633889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2748815" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32840723" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25615764" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -299,7 +302,8 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="major update&#10; + completely rewritten codebase&#10; + transitera is now object oriented&#10; + using argparse for commandline options parsing&#10; + version bump 0.2.0.dev0" />
+    <option name="LAST_COMMIT_MESSAGE" value="major update&#10; + completely rewritten codebase&#10; + transitera is now object oriented&#10; + using argparse for commandline options parsing&#10; + version bump 0.2.0.dev0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -368,11 +372,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/translitera/translitera.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2159">
-          <caret line="127" column="11" lean-forward="true" selection-start-line="127" selection-start-column="11" selection-end-line="127" selection-end-column="11" />
+        <state relative-caret-position="364">
+          <caret line="126" column="0" lean-forward="true" selection-start-line="126" selection-start-column="0" selection-end-line="126" selection-end-column="0" />
           <folding>
             <element signature="e#282#291#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/translitera/kn2la.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="603" column="0" lean-forward="true" selection-start-line="603" selection-start-column="0" selection-end-line="603" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
