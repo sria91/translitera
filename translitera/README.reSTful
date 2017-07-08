@@ -6,10 +6,9 @@
 
 	1. Python 3 - https://www.python.org/ (tested with Python 3.5 & 3.6)
 
-^^^ Build and install translitera
+^^^ Install translitera
 
-  Change to the directory consisting of setup.py and run
-	`$ sudo python3 setup.py install`
+	`$ pip3 install translitera`
 
 ^^^ How to use translitera
 

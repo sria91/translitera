@@ -14,7 +14,7 @@ __author__ = "sria91"
 if __name__ == '__main__':
     setuptools.setup(
         name='translitera',
-        version='0.2.0.dev0',
+        version='0.2.0.dev1',
 
         description='Phonetic transliteration of text in Kannaḍa script into Latin/English characters',
         long_description=open('translitera/README.reSTful').read(),
