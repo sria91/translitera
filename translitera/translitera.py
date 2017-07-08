@@ -167,7 +167,7 @@ def main():
 
     else:
         while True:
-            text = os.sys.stdin.read()
+            text = os.sys.stdin.readline()
             if len(text) == 0:
                 break
             else:
